@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2021-06/schema",
+    "$id": "https://example.com/organization.schema.json",
+    "title": "robot",
+    "description": "A robot account created inside of Quay",
+    "type": "object",
+    "properties":{
+        "name": {
+            "description": "The unique name of the organization.",
+            "type": "string"
+        },
+        "email":{
+            "description": "The email address for the organization (optional). May be a UUID",
+            "type": "string" 
+        },
+        "avatar":{
+            "description": "The unique name of the organization.",
+            "type": "object"
+        }
+    }
+}

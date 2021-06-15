@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2021-06/schema",
+    "$id": "https://example.com/robot.schema.json",
+    "title": "robot",
+    "description": "A robot account created inside of Quay",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The unique name of the robot account. It follows the pattern '<org_name>+<robot_name>'",
+            "type": "string"
+        },
+        "created": {
+            "description": "The timestamp generated when the robot account is created",
+            "type": "date-time"
+        },
+        "last_accessed": {
+            "description": "The timestamp for when the robot account was last accessed",
+            "type": "date-time"
+        },
+        "description": {
+            "description": "The user-provided description for the robot account",
+            "type": "string"
+        },
+        "token": {
+            "description": "The authentication token for the robot account",
+            "type": "string"
+        },
+        "unstructured_metadata": {
+            "description": "The unstructured metadata associated with the robot account",
+            "type": "object"
+        }
+    },
+    "required": ["name","created","last_accessed","description","token","unstructured_metadata"]
+}

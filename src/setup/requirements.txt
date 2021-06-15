@@ -1,0 +1,6 @@
+flask
+requests
+kubernetes
+openshift
+ruamel.yaml
+jinja2
